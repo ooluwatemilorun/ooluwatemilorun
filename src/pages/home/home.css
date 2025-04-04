@@ -1,0 +1,45 @@
+.section__intro {
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section__intro span,
+.section__intro h3,
+.section__intro p {
+  margin: 0.5rem 0;
+}
+.section__intro h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.section__intro h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.25rem;
+}
+.section__intro .intro__action button {
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 2px #302e4d;
+  color: #ec1839;
+}
+.section__intro .intro__action button a {
+  color: #ec1839;
+}
+.section__intro .intro__action button:active {
+  box-shadow: 0 1px 1px 1px #302e4d;
+}
+.section__intro .intro__action button:hover, .section__intro .intro__action button a:hover {
+  color: #302e4d;
+}
+@media screen and (max-width: 800px) {
+  .section__intro {
+    width: 90%;
+  }
+}/*# sourceMappingURL=home.css.map */

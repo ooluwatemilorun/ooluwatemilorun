@@ -1,0 +1,37 @@
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.contact__detail {
+  padding: 1rem;
+}
+.contact__detail .detail__card {
+  width: clamp(22rem, 50%, 30rem);
+  padding: 1rem 2rem;
+  background: #e8dfec;
+  margin: 1rem 0;
+  box-shadow: 0 1px 1px #302e4d;
+}
+.contact__detail .detail__card .p__text {
+  color: #302e4d;
+}
+
+.contact__form {
+  margin: 1rem;
+}
+.contact__form input, .contact__form textarea {
+  width: clamp(22rem, 50%, 30rem);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+.contact__form button {
+  margin: 0 1rem;
+  border: none;
+  background: #e8dfec;
+  box-shadow: 0 2px 2px 2px #302e4d;
+}
+.contact__form button:hover {
+  box-shadow: 0 1px 1px #302e4d;
+}/*# sourceMappingURL=contact.css.map */

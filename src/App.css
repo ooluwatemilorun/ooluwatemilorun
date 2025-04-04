@@ -1,0 +1,133 @@
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0.25rem;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  width: 100dvw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app__container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 20rem auto;
+  grid-template-areas: "aside main";
+}
+.app__container .aside__nav {
+  grid-area: aside;
+  background: #fdf9ff;
+  position: fixed;
+  height: 100%;
+  width: 20rem;
+  border-right: 1px solid #e8dfec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .app__container .aside__nav {
+    margin-left: -20rem;
+  }
+}
+.app__container .aside__nav .nav__img {
+  height: 10rem;
+  width: 10rem;
+  padding: 4px;
+  margin: 2rem 0;
+  border: 1px solid #302e4d;
+  border-radius: 50%;
+  background: #ec1839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__container .aside__nav .nav__img img {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+}
+.app__container .aside__nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  list-style: none;
+}
+.app__container .aside__nav ul .nav__link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border-bottom: 1px solid #e8dfec;
+  color: #302e4d;
+  padding: 15px;
+}
+.app__container .aside__nav ul .nav__link:active, .app__container .aside__nav ul .nav__link:hover {
+  color: #ec1839;
+}
+.app__container .aside__nav ul .nav__link i {
+  margin-right: 0.5rem;
+}
+.app__container .aside__section {
+  grid-area: main;
+  padding: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .app__container .aside__section {
+    margin-left: -20rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .app__container .menu-icon {
+    display: flex;
+  }
+  .app__container .menu-toggle:checked + .menu-icon + .aside__nav {
+    margin-left: 0;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  margin-right: 1rem;
+  position: absolute;
+}
+
+.menu-icon {
+  margin: 1rem;
+  justify-self: flex-end;
+  align-items: center;
+  margin-right: 1.5rem;
+  position: fixed;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+  color: #ec1839;
+  text-align: center;
+  z-index: 120;
+}
+.menu-icon:hover {
+  color: #302e4d;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,58 @@
+// SCSS Variables
+$white-900: #f2f2fc;
+$white-100: #fdf9ff;
+$black-900: #302e4d;
+$black-700: #302e4d;
+$skin-color: #ec1839;
+
+
+.section__intro{
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    span,
+    h3,
+    p{
+        margin: .5rem 0;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: .25rem;
+    }
+    .intro__action{
+        
+        button{
+            padding: .75rem;
+            border: none;
+            outline: none;
+            margin: .5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 2px $black-700;
+            color: $skin-color;
+
+            a{
+                color: $skin-color;
+            }
+            
+            &:active {
+                box-shadow: 0 1px 1px 1px $black-700;
+            }
+            &:hover, a:hover{
+                color: $black-900;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
+}

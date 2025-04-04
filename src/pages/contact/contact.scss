@@ -1,0 +1,50 @@
+// SCSS Variables
+$white-900: #f2f2fc;
+$white-100: #fdf9ff;
+$white-50: #e8dfec;
+$black-900: #302e4d;
+$skin-color: #ec1839;
+
+
+*{
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.contact__detail{
+    padding: 1rem;
+
+    .detail__card{
+        width: clamp(22rem, 50%, 30rem);
+        padding: 1rem 2rem;
+        background: $white-50;
+        margin: 1rem 0;
+        box-shadow: 0 1px 1px $black-900;
+
+        .p__text{
+            color: $black-900;
+        }
+    }
+}
+
+.contact__form{
+    margin: 1rem;
+
+    input, textarea{
+        width: clamp(22rem, 50%, 30rem);
+        padding: .5rem 1rem;
+        margin: 1rem;
+    }
+
+    button{
+        margin: 0 1rem;
+        border: none;
+        background: $white-50;
+        box-shadow: 0 2px 2px 2px $black-900;
+
+        &:hover{
+        box-shadow: 0 1px 1px $black-900;
+        }
+    }
+}
